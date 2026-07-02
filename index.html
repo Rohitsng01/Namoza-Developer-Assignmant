@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expert Orthopaedic Consultation | OrthoNow Bengaluru</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="Get an expert orthopaedic opinion. Consult Bengaluru's top knee and back pain specialists at OrthoNow. 9 state-of-the-art clinics. Book your consultation today.">
+  <meta name="keywords" content="orthopaedic doctor bangalore, knee pain treatment, back pain specialist, joint replacement, OrthoNow, Bengaluru">
+  
+  <!-- Google Fonts - Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Global styles and color codes */
+    body {
+      font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+      background-color: #f5faf8;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e0ede9;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      color: #004d40;
+    }
+
+    .logo-link svg {
+      width: 30px;
+      height: 30px;
+      fill: #00897b;
+    }
+
+    .phone-button {
+      background-color: #e0f2f1;
+      color: #004d40;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      border: 1px solid #b2dfdb;
+      transition: all 0.2s ease;
+    }
+
+    .phone-button:hover {
+      background-color: #b2dfdb;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 60px 0;
+    }
+
+    .hero-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .hero-left {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-left h1 {
+      font-size: 40px;
+      color: #004d40;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero-left h1 span {
+      color: #00897b;
+    }
+
+    .hero-left p {
+      font-size: 17px;
+      color: #555555;
+      margin-bottom: 30px;
+    }
+
+    .tag-label {
+      display: inline-block;
+      background-color: #004d40;
+      color: #ffffff;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .bullets-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .bullets-list li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .check-icon {
+      color: #2ecc71;
+      font-weight: bold;
+    }
+
+    /* 3-Step Form Card styling */
+    .hero-right {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .form-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border: 1px solid #e0ede9;
+    }
+
+    .form-box h2 {
+      font-size: 22px;
+      color: #004d40;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .form-box p.subtitle {
+      color: #777777;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* Steps Indicator */
+    .steps-tracker {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .step-indicator {
+      font-size: 12px;
+      color: #888888;
+      font-weight: bold;
+      cursor: not-allowed;
+      transition: color 0.2s ease, background-color 0.2s ease;
+      padding: 4px 8px;
+      border-radius: 4px;
+      user-select: none;
+    }
+
+    .step-indicator.unlocked {
+      color: #004d40;
+      cursor: pointer;
+    }
+
+    .step-indicator.unlocked:hover {
+      background-color: #e0f2f1;
+    }
+
+    .step-indicator.active {
+      color: #00897b;
+      cursor: pointer;
+    }
+
+    .step-indicator.active:hover {
+      background-color: #e0f2f1;
+    }
+
+    .steps-progress {
+      height: 4px;
+      background-color: #e0f2f1;
+      margin-bottom: 25px;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .progress-line {
+      height: 100%;
+      width: 33.3%;
+      background-color: #00897b;
+      transition: width 0.3s ease;
+    }
+
+    /* Inputs fields */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333333;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      font-size: 15px;
+      box-sizing: border-box;
+      background-color: #fafafa;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #00897b;
+      background-color: #ffffff;
+    }
+
+    .form-input.error {
+      border-color: #e74c3c;
+      background-color: #fdf2f2;
+    }
+
+    .error-text {
+      color: #e74c3c;
+      font-size: 12px;
+      margin-top: 4px;
+      display: none;
+    }
+
+    /* Step Buttons layout */
+    .form-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .btn-primary {
+      flex: 1;
+      background-color: #00897b;
+      color: #ffffff;
+      border: none;
+      padding: 14px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover {
+      background-color: #004d40;
+    }
+
+    .btn-secondary {
+      background-color: #f0f0f0;
+      color: #333333;
+      border: 1px solid #dddddd;
+      padding: 14px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background-color: #e5e5e5;
+    }
+
+    .lock-footer {
+      text-align: center;
+      font-size: 11px;
+      color: #888888;
+      margin-top: 15px;
+    }
+
+    /* Thank you container */
+    .thanks-container {
+      display: none;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .thanks-container h3 {
+      color: #004d40;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .thanks-summary {
+      background-color: #f0fcf9;
+      border: 1px solid #b2dfdb;
+      border-radius: 6px;
+      padding: 15px;
+      text-align: left;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    .thanks-summary p {
+      margin: 5px 0;
+    }
+
+    /* Stats Counter Section */
+    .stats-banner {
+      background-color: #004d40;
+      color: #ffffff;
+      padding: 30px 0;
+    }
+
+    .stats-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 32px;
+      color: #00897b;
+      margin: 0;
+    }
+
+    .stat-item p {
+      margin: 5px 0 0 0;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    /* Clinic cards */
+    .clinics-section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 28px;
+      color: #004d40;
+    }
+
+    .section-title p {
+      color: #777777;
+    }
+
+    .clinics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .clinic-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid #e0ede9;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .clinic-city {
+      font-size: 11px;
+      color: #00897b;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .clinic-name {
+      font-size: 18px;
+      color: #004d40;
+      margin: 5px 0 10px 0;
+    }
+
+    .clinic-desc {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+
+    .btn-clinic-detail {
+      align-self: flex-start;
+      background-color: transparent;
+      color: #004d40;
+      border: 1px solid #004d40;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-clinic-detail:hover {
+      background-color: #004d40;
+      color: #ffffff;
+      border-color: #004d40;
+    }
+
+    /* Doctors Section */
+    .docs-section {
+      padding: 60px 0;
+      background-color: #ffffff;
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .doc-card {
+      background-color: #f5faf8;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #e0ede9;
+    }
+
+    .doc-card h3 {
+      margin: 10px 0 5px 0;
+      color: #004d40;
+    }
+
+    .doc-role {
+      color: #00897b;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .doc-info {
+      font-size: 13px;
+      color: #666666;
+      border-top: 1px solid #e0ede9;
+      padding-top: 10px;
+    }
+
+    /* Gated Guide Banner */
+    .guide-banner {
+      background: linear-gradient(to right, #004d40, #00796b);
+      color: #ffffff;
+      padding: 40px 0;
+    }
+
+    .guide-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .guide-text h2 {
+      margin: 0 0 5px 0;
+    }
+
+    .guide-text p {
+      margin: 0;
+      color: #e0f2f1;
+    }
+
+    .btn-download-trigger {
+      background-color: #00897b;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .btn-download-trigger:hover {
+      background-color: #004d40;
+    }
+
+    /* Blog section */
+    .blog-section {
+      padding: 60px 0;
+    }
+
+    .blog-box {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .blog-meta {
+      font-size: 12px;
+      color: #888888;
+      margin-bottom: 15px;
+    }
+
+    .blog-body p {
+      margin-bottom: 15px;
+      color: #444444;
+    }
+
+    /* Testimonials */
+    .reviews-section {
+      padding: 60px 0;
+      background-color: #f5faf8;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .review-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+
+    .review-stars {
+      color: #f1c40f;
+      margin-bottom: 10px;
+    }
+
+    .review-quote {
+      font-style: italic;
+      font-size: 14px;
+      color: #555555;
+      margin-bottom: 15px;
+    }
+
+    .review-author {
+      font-weight: bold;
+      font-size: 13px;
+      color: #004d40;
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #ffffff;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      cursor: pointer;
+      z-index: 100;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+
+    .whatsapp-float svg {
+      width: 30px;
+      height: 30px;
+      fill: #ffffff;
+    }
+
+    /* Modal Popup window */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-window {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #888888;
+    }
+
+    /* Drawer Popup */
+    .clinic-info-drawer {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      border-top: 3px solid #00897b;
+      padding: 20px;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+      z-index: 1001;
+    }
+
+    .drawer-inner {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .drawer-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #00251a;
+      color: #ffffff;
+      padding: 30px 0;
+      font-size: 12px;
+    }
+
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: #e0f2f1;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustment rules */
+    @media (max-width: 768px) {
+      .hero-layout {
+        flex-direction: column;
+      }
+      .footer-flex {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-links a {
+        margin: 0 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-flex">
+      <a href="#" class="logo-link" id="header_logo">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-4H7v-2h4V7h2v4h4v2h-4v4z"/>
+        </svg>
+        OrthoNow
+      </a>
+      <div class="header-cta">
+        <a href="tel:+918045689000" class="phone-button track-phone" id="cta_call_header">
+          Call 080 4568 9000
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO AREA & 3-STEP FORM -->
+    <section class="hero-section">
+      <div class="container hero-layout">
+        <!-- Text on Left -->
+        <div class="hero-left">
+          <div class="tag-label">Expert Care</div>
+          <h1>Get an Expert Orthopaedic Opinion. <span>Book Your Consultation.</span></h1>
+          <p>Overcoming knee, joint, or back pain starts with the right diagnosis. Consult top orthopaedic surgeons at Bangalore's most trusted specialty clinic chain.</p>
+          
+          <ul class="bullets-list">
+            <li><span class="check-icon">&#10003;</span> 9 Modern Clinics across Bengaluru, Hyderabad & Chennai</li>
+            <li><span class="check-icon">&#10003;</span> Top Surgeons with 15+ Years MS/DNB Experience</li>
+            <li><span class="check-icon">&#10003;</span> 10,000+ Successful Procedures & Happy Knees</li>
+          </ul>
+        </div>
+
+        <!-- 3-Step Booking Form on Right -->
+        <div class="hero-right">
+          <div class="form-box" id="form_card_container">
+            
+            <div class="form-header">
+              <h2>Book A Consultation</h2>
+              <p class="subtitle">Confirm your clinic slot in 30 seconds</p>
+            </div>
+
+            <!-- Steps Progress indicator -->
+            <div class="steps-tracker">
+              <span id="step_label_1" class="step-indicator active">1. Specialty</span>
+              <span id="step_label_2" class="step-indicator">2. Details</span>
+              <span id="step_label_3" class="step-indicator">3. Confirm</span>
+            </div>
+            <div class="steps-progress">
+              <div class="progress-line" id="progress_line"></div>
+            </div>
+
+            <form id="booking_flow_form" novalidate>
+              
+              <!-- STEP 1: Specialty and Location selection -->
+              <div class="step-container" id="step_1_container">
+                <div class="form-group">
+                  <label for="booking_specialty">Select Specialty</label>
+                  <select id="booking_specialty" class="form-input" required>
+                    <option value="" disabled selected>Select Medical Specialty</option>
+                    <option value="Knee & Joint Replacement">Knee & Joint Replacement</option>
+                    <option value="Spine & Back Care">Spine & Back Care</option>
+                    <option value="Arthroscopy & Sports Injuries">Arthroscopy & Sports Injuries</option>
+                    <option value="General Orthopaedics">General Orthopaedics</option>
+                  </select>
+                  <div class="error-text" id="specialty_error">Please select a specialty option.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="booking_clinic">Preferred Clinic Location</label>
+                  <select id="booking_clinic" class="form-input" required>
+                    <option value="" disabled selected>Select Clinic Location</option>
+                    <option value="Indiranagar, Bengaluru">Indiranagar (Bengaluru)</option>
+                    <option value="Jayanagar, Bengaluru">Jayanagar (Bengaluru)</option>
+                    <option value="Whitefield, Bengaluru">Whitefield (Bengaluru)</option>
+                    <option value="HSR Layout, Bengaluru">HSR Layout (Bengaluru)</option>
+                    <option value="Banjara Hills, Hyderabad">Banjara Hills (Hyderabad)</option>
+                    <option value="Gachibowli, Hyderabad">Gachibowli (Hyderabad)</option>
+                    <option value="Adyar, Chennai">Adyar (Chennai)</option>
+                    <option value="Anna Nagar, Chennai">Anna Nagar (Chennai)</option>
+                  </select>
+                  <div class="error-text" id="clinic_error">Please select your preferred clinic location.</div>
+                </div>
+
+                <div class="form-buttons">
+                  <button type="button" class="btn-primary" id="btn_step_1_next">Next Step</button>
+                </div>
+              </div>
+
+              <!-- STEP 2: Name, Phone & Date inputs -->
+              <div class="step-container" id="step_2_container" style="display: none;">
+                <div class="form-group">
+                  <label for="booking_name">Full Name</label>
+                  <input type="text" id="booking_name" class="form-input" placeholder="e.g. Rohit Kumar" required>
+                  <div class="error-text" id="name_error">Please enter your full name (minimum 2 characters).</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="booking_phone">Phone Number</label>
+                  <input type="tel" id="booking_phone" class="form-input" placeholder="e.g. 9876543210" required>
+                  <div class="error-text" id="phone_error">Please enter a valid 10-digit phone number.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="booking_date">Preferred Consult Date</label>
+                  <input type="date" id="booking_date" class="form-input" required>
+                  <div class="error-text" id="date_error">Please select a valid consult date (today or future).</div>
+                </div>
+
+                <div class="form-buttons">
+                  <button type="button" class="btn-secondary" id="btn_step_2_back">Back</button>
+                  <button type="button" class="btn-primary" id="btn_step_2_next">Next Step</button>
+                </div>
+              </div>
+
+              <!-- STEP 3: Summary details verification -->
+              <div class="step-container" id="step_3_container" style="display: none;">
+                <div style="background-color: #f5faf8; padding: 15px; border-radius: 6px; border: 1px solid #e0ede9; margin-bottom: 20px; font-size: 13px;">
+                  <h4 style="color: #004d40; margin-top: 0; margin-bottom: 10px; font-size: 14px;">Review Details:</h4>
+                  <p><strong>Specialty:</strong> <span id="confirm_specialty">-</span></p>
+                  <p><strong>Location:</strong> <span id="confirm_clinic">-</span></p>
+                  <p><strong>Patient Name:</strong> <span id="confirm_name">-</span></p>
+                  <p><strong>Phone:</strong> <span id="confirm_phone">-</span></p>
+                  <p><strong>Preferred Date:</strong> <span id="confirm_date">-</span></p>
+                </div>
+
+                <p style="font-size: 11px; color: #888888; text-align: center; margin-bottom: 15px;">By clicking below, you submit your prioritised slot reservation request.</p>
+
+                <div class="form-buttons">
+                  <button type="button" class="btn-secondary" id="btn_step_3_back">Back</button>
+                  <button type="submit" class="btn-primary" id="btn_step_3_submit">Confirm Booking</button>
+                </div>
+              </div>
+
+              <div class="lock-footer">
+                &#128274; Secure 256-Bit SSL Booking Encryption.
+              </div>
+            </form>
+
+            <!-- Final success thank you state box -->
+            <div class="thanks-container" id="thanks_state_container">
+              <div style="width: 70px; height: 70px; background-color: #e8f8f5; color: #2ecc71; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto; font-size: 32px;">
+                &#10003;
+              </div>
+              <h3>Appointment Confirmed!</h3>
+              <p>Thank you for choosing OrthoNow. Our medical coordinator will call you back within <strong>15 minutes</strong> to confirm your exact doctor consultation time slot.</p>
+              
+              <div class="thanks-summary">
+                <p><strong>Booking ID:</strong> <span id="summary_booking_id" style="color: #00897b; font-weight: bold;"></span></p>
+                <p><strong>Patient Name:</strong> <span id="summary_name"></span></p>
+                <p><strong>Preferred Location:</strong> <span id="summary_location"></span></p>
+                <p><strong>Clinic Specialty:</strong> <span id="summary_specialty"></span></p>
+                <p><strong>Consulting Date:</strong> <span id="summary_date"></span></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BANNER -->
+    <section class="stats-banner">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <h3>9</h3>
+          <p>Modern Clinics</p>
+        </div>
+        <div class="stat-item">
+          <h3>15+</h3>
+          <p>Years Surgeon Exp</p>
+        </div>
+        <div class="stat-item">
+          <h3>10,000+</h3>
+          <p>Joints Healed</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLINIC LOCATIONS SECTION (Clinic page views tracking) -->
+    <section class="clinics-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Orthopaedic Clinics</h2>
+          <p>Click on any clinic below to view specific facility details and maps.</p>
+        </div>
+        
+        <div class="clinics-grid">
+          <!-- 1. Indiranagar -->
+          <div class="clinic-card">
+            <span class="clinic-city">Bengaluru</span>
+            <h3 class="clinic-name">Indiranagar Clinic</h3>
+            <p class="clinic-desc">First floor, 100 Feet Rd, near Metro Station, Indiranagar.</p>
+            <button class="btn-clinic-detail" data-clinic="Indiranagar Clinic" data-city="Bengaluru" data-slug="indiranagar">View Clinic</button>
+          </div>
+          <!-- 2. Jayanagar -->
+          <div class="clinic-card">
+            <span class="clinic-city">Bengaluru</span>
+            <h3 class="clinic-name">Jayanagar Clinic</h3>
+            <p class="clinic-desc">3rd Block, 11th Main Road, near Post Office, Jayanagar.</p>
+            <button class="btn-clinic-detail" data-clinic="Jayanagar Clinic" data-city="Bengaluru" data-slug="jayanagar">View Clinic</button>
+          </div>
+          <!-- 3. Whitefield -->
+          <div class="clinic-card">
+            <span class="clinic-city">Bengaluru</span>
+            <h3 class="clinic-name">Whitefield Clinic</h3>
+            <p class="clinic-desc">ITPL Main Road, opposite Prestige Shantiniketan, Whitefield.</p>
+            <button class="btn-clinic-detail" data-clinic="Whitefield Clinic" data-city="Bengaluru" data-slug="whitefield">View Clinic</button>
+          </div>
+          <!-- 4. HSR Layout -->
+          <div class="clinic-card">
+            <span class="clinic-city">Bengaluru</span>
+            <h3 class="clinic-name">HSR Layout Clinic</h3>
+            <p class="clinic-desc">Sector 6, Outer Ring Road, opposite McD, HSR Layout.</p>
+            <button class="btn-clinic-detail" data-clinic="HSR Layout Clinic" data-city="Bengaluru" data-slug="hsr-layout">View Clinic</button>
+          </div>
+          <!-- 5. Banjara Hills -->
+          <div class="clinic-card">
+            <span class="clinic-city">Hyderabad</span>
+            <h3 class="clinic-name">Banjara Hills Clinic</h3>
+            <p class="clinic-desc">Road No. 2, opposite KBR Park, Banjara Hills.</p>
+            <button class="btn-clinic-detail" data-clinic="Banjara Hills Clinic" data-city="Hyderabad" data-slug="banjara-hills">View Clinic</button>
+          </div>
+          <!-- 6. Gachibowli -->
+          <div class="clinic-card">
+            <span class="clinic-city">Hyderabad</span>
+            <h3 class="clinic-name">Gachibowli Clinic</h3>
+            <p class="clinic-desc">Financial District Road, next to Hyatt, Gachibowli.</p>
+            <button class="btn-clinic-detail" data-clinic="Gachibowli Clinic" data-city="Hyderabad" data-slug="gachibowli">View Clinic</button>
+          </div>
+          <!-- 7. Adyar -->
+          <div class="clinic-card">
+            <span class="clinic-city">Chennai</span>
+            <h3 class="clinic-name">Adyar Clinic</h3>
+            <p class="clinic-desc">Sardar Patel Road, opposite IIT Gate, Adyar.</p>
+            <button class="btn-clinic-detail" data-clinic="Adyar Clinic" data-city="Chennai" data-slug="adyar">View Clinic</button>
+          </div>
+          <!-- 8. Anna Nagar -->
+          <div class="clinic-card">
+            <span class="clinic-city">Chennai</span>
+            <h3 class="clinic-name">Anna Nagar Clinic</h3>
+            <p class="clinic-desc">2nd Avenue, near Roundtana, Anna Nagar.</p>
+            <button class="btn-clinic-detail" data-clinic="Anna Nagar Clinic" data-city="Chennai" data-slug="anna-nagar">View Clinic</button>
+          </div>
+          <!-- 9. OMR Perungudi -->
+          <div class="clinic-card">
+            <span class="clinic-city">Chennai</span>
+            <h3 class="clinic-name">OMR Perungudi Clinic</h3>
+            <p class="clinic-desc">OMR Road, opposite World Trade Center, Perungudi.</p>
+            <button class="btn-clinic-detail" data-clinic="OMR Perungudi Clinic" data-city="Chennai" data-slug="omr-perungudi">View Clinic</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTOR CREDENTIALS SECTION -->
+    <section class="docs-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Consult Top Joint Specialists</h2>
+          <p>Get evaluated by award-winning orthopaedic surgeons dedicated to restore your mobility.</p>
+        </div>
+
+        <div class="docs-grid">
+          <!-- Doctor 1 -->
+          <div class="doc-card">
+            <div class="avatar-wrapper">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-6h2v6zm0-8h-2V7h2v4z"/>
+              </svg>
+            </div>
+            <h3>Dr. Amitav Sen</h3>
+            <p class="doc-role">Joint & Knee Replacement Specialist</p>
+            <p class="doc-info">MS (Ortho), Fellow in Joint Reconstruction (Germany)<br><strong>18+ Years Experience</strong></p>
+          </div>
+
+          <!-- Doctor 2 -->
+          <div class="doc-card">
+            <div class="avatar-wrapper">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-6h2v6zm0-8h-2V7h2v4z"/>
+              </svg>
+            </div>
+            <h3>Dr. Nandini Rao</h3>
+            <p class="doc-role">Spine & Back Care Expert</p>
+            <p class="doc-info">MS (Ortho), DNB (Ortho), Fellow in Spine Surgery<br><strong>14+ Years Experience</strong></p>
+          </div>
+
+          <!-- Doctor 3 -->
+          <div class="doc-card">
+            <div class="avatar-wrapper">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-6h2v6zm0-8h-2V7h2v4z"/>
+              </svg>
+            </div>
+            <h3>Dr. Vikram Aditya</h3>
+            <p class="doc-role">Arthroscopy & Sports Medicine</p>
+            <p class="doc-info">MS (Ortho), Fellow in Sports Injury (Australia)<br><strong>12+ Years Experience</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GATED PATIENT GUIDE BANNER -->
+    <section class="guide-banner">
+      <div class="container guide-flex">
+        <div class="guide-text">
+          <h2>Free Patient Guide: Joint & Back Care Recovery</h2>
+          <p>Get critical non-surgical healing exercises, posture adjustment tips, and doctor advice. Gated PDF download for immediate relief guidance.</p>
+        </div>
+        <div>
+          <button class="btn-download-trigger" id="btn_trigger_download">
+            Download Free Guide
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG SECTION (Blog Scroll Depth tracking) -->
+    <section class="blog-section">
+      <div class="container">
+        <article class="blog-box" id="blog_tracking_article">
+          <div style="display: inline-block; background-color: #00897b; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-bottom: 10px;">
+            Blog Insight
+          </div>
+          <h3>Non-Surgical Management of Knee Osteoarthritis</h3>
+          <div class="blog-meta">
+            Published: July 2026 | By: Dr. Amitav Sen | Read Time: 5 mins
+          </div>
+          <div class="blog-body">
+            <p><strong>1. Understanding Cartilage Wear:</strong> Osteoarthritis (OA) is the wear-and-tear of articular cartilage. While joint replacement surgery is highly successful for advanced-stage OA, early to moderate knee pain can be effectively managed without operating. The objective is to stabilize the joint, reduce inflammatory flares, and maintain joint lubrication.</p>
+            <p><strong>2. Core Strengthening & Physiotherapy:</strong> The knee joint is heavily dependent on surrounding muscular stability. Strengthening the quadriceps, hamstrings, and gluteal muscle groups transfers weight bearing away from the worn cartilage. Daily low-impact exercises, such as stationary bicycling and straight leg raises, increase regional blood flow and joint mobility.</p>
+            <p><strong>3. Weight Management Dynamics:</strong> Physics plays a crucial role in knee health. Every kilogram of body weight translates to four times the force acting on the knee joint during walking. Losing even 5% of body weight can reduce joint strain by up to 20%, significantly mitigating pain signals during daily activities like climbing stairs.</p>
+            <p><strong>4. Advanced Medical Therapies:</strong> For persistent discomfort, orthopaedic clinics offer knee lubrication injections (Hyaluronic acid) and regenerative therapies (PRP) which act as shock absorbers. Viscosupplementation provides mechanical cushion inside the joint space, offering pain relief that ranges from 6 to 12 months without systemic side effects.</p>
+            <p><strong>5. Structured Guidance:</strong> Always consult an experienced orthopaedic specialist to draft a personalized rehabilitation schedule. Knowing when to utilize hot compresses versus ice wraps is crucial in preventing chronic ligamentous stiffness.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS / REVIEWS -->
+    <section class="reviews-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our Patients Say</h2>
+          <p>Real stories of patients who restored their active lifestyle.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-quote">"I was experiencing severe back pain for 6 months, making office hours unbearable. Visited the Jayanagar clinic and consulted Dr. Nandini. The combination of targeted physical therapy and minimal medication worked wonders. Excellent experience."</p>
+            <div class="review-author">Ananth Ramanathan - Jayanagar, Bengaluru</div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-quote">"My mother underwent a total knee replacement at OrthoNow Indiranagar under Dr. Sen. She walked the very next day! The hospital infrastructure is top-notch and the coordination was incredibly smooth. Five stars!"</p>
+            <div class="review-author">Meera Reddy - Indiranagar, Bengaluru</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GATED GUIDE MODAL POPUP -->
+  <div class="modal-overlay" id="guide_modal_popup">
+    <div class="modal-window">
+      <button class="modal-close" id="btn_close_modal">&times;</button>
+      <h3 style="color: #004d40; margin-top: 0; margin-bottom: 10px; font-size: 20px;">Get Your Free Guide</h3>
+      <p style="font-size: 13px; color: #666666; margin-bottom: 20px;">Enter your name and mobile number to unlock the PDF guide download instantly.</p>
+      
+      <form id="guide_modal_form" novalidate>
+        <div class="form-group">
+          <label for="guide_name_input">Full Name</label>
+          <input type="text" id="guide_name_input" class="form-input" placeholder="e.g. Anand Sharma" required>
+          <div class="error-text" id="guide_name_error">Please enter your name.</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="guide_phone_input">Phone Number</label>
+          <input type="tel" id="guide_phone_input" class="form-input" placeholder="e.g. 9876543210" required>
+          <div class="error-text" id="guide_phone_error">Please enter a valid 10-digit mobile number.</div>
+        </div>
+        
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">
+          Download PDF Guide
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- CLINIC DETAIL DRAWER -->
+  <div class="clinic-info-drawer" id="clinic_drawer_overlay">
+    <div class="drawer-inner">
+      <button class="drawer-close" id="btn_close_drawer">&times;</button>
+      <div id="clinic_drawer_content">
+        <!-- Content injected dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP CHAT WIDGET -->
+  <a href="https://wa.me/918045689000" class="whatsapp-float" id="whatsapp_float_link" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.758.459 3.473 1.332 4.988L2 22l5.176-1.356c1.47.8 3.11 1.22 4.825 1.22h.005c5.507 0 10-4.482 10-9.988C22.007 6.482 17.519 2 12.012 2zm5.748 14.127c-.25.704-1.25 1.296-1.72 1.393-.47.1-1.07.18-3.08-.62-2.58-1.02-4.23-3.66-4.36-3.83-.13-.17-1.06-1.41-1.06-2.69 0-1.28.67-1.91.9-2.18.23-.27.51-.34.69-.34.18 0 .36 0 .51.01.16.01.37-.06.58.44.22.52.75 1.83.82 1.97.07.14.12.31.02.51-.1.2-.15.31-.31.49-.15.18-.32.41-.46.55-.16.16-.33.33-.14.65.19.32.85 1.4 1.83 2.27.8 1.15 1.48 1.5 1.8 1.63.32.13.51.11.7-.1.19-.21.82-.95 1.04-1.28.22-.33.45-.27.75-.16.3.11 1.91.9 2.24 1.06.33.16.55.24.63.38.08.14.08.82-.17 1.52z"/>
+    </svg>
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-flex">
+      <div>
+        <p>&copy; 2026 OrthoNow Healthcare Private Limited. All rights reserved.</p>
+        <p style="margin-top: 4px; font-size: 10px; color: #a0c2bb;">Disclaimer: Opinions and diagnoses are based on clinical evaluations. Results vary by individual health condition.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT FOR EVENT TRACKING & LIVE SIMULATION -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      
+      // Make sure dataLayer exists in the window
+      window.dataLayer = window.dataLayer || [];
+
+      // Helper function to log custom console debug messages
+      function logEvent(name, data) {
+        console.log("-----------------------------------------");
+        console.log("Event Triggered: " + name);
+        console.log("Data Sent to dataLayer:", data);
+        console.log("-----------------------------------------");
+      }
+
+      /* =============================================================
+         1. 3-STEP APPOINTMENT BOOKING FUNNEL
+         ============================================================= */
+      let currentStep = 1;
+      let maxStepReached = 1;
+
+      // Grab step wrappers
+      const step1 = document.getElementById("step_1_container");
+      const step2 = document.getElementById("step_2_container");
+      const step3 = document.getElementById("step_3_container");
+
+      // Step headers
+      const label1 = document.getElementById("step_label_1");
+      const label2 = document.getElementById("step_label_2");
+      const label3 = document.getElementById("step_label_3");
+      
+      const progressLine = document.getElementById("progress_line");
+
+      // Form Fields
+      const specialtySelect = document.getElementById("booking_specialty");
+      const clinicSelect = document.getElementById("booking_clinic");
+      const nameInput = document.getElementById("booking_name");
+      const phoneInput = document.getElementById("booking_phone");
+      const dateInput = document.getElementById("booking_date");
+
+      // Validation Error Prompts
+      const specialtyError = document.getElementById("specialty_error");
+      const clinicError = document.getElementById("clinic_error");
+      const nameError = document.getElementById("name_error");
+      const phoneError = document.getElementById("phone_error");
+      const dateError = document.getElementById("date_error");
+
+      // Set min date to today's date
+      const todayDate = new Date().toISOString().split('T')[0];
+      dateInput.min = todayDate;
+
+      // Event Listeners to remove error class on change/input
+      specialtySelect.addEventListener("change", () => {
+        specialtySelect.classList.remove("error");
+        specialtyError.style.display = "none";
+      });
+      clinicSelect.addEventListener("change", () => {
+        clinicSelect.classList.remove("error");
+        clinicError.style.display = "none";
+      });
+      nameInput.addEventListener("input", () => {
+        if (nameInput.value.trim().length >= 2) {
+          nameInput.classList.remove("error");
+          nameError.style.display = "none";
+        }
+      });
+      phoneInput.addEventListener("input", () => {
+        const phoneRegex = /^[6-9]\d{9}$/;
+        if (phoneRegex.test(phoneInput.value.trim())) {
+          phoneInput.classList.remove("error");
+          phoneError.style.display = "none";
+        }
+      });
+      dateInput.addEventListener("change", () => {
+        if (dateInput.value >= todayDate) {
+          dateInput.classList.remove("error");
+          dateError.style.display = "none";
+        }
+      });
+
+      // Validation logic
+      function validateStep1() {
+        let isValid = true;
+        if (!specialtySelect.value) {
+          specialtySelect.classList.add("error");
+          specialtyError.style.display = "block";
+          isValid = false;
+        }
+        if (!clinicSelect.value) {
+          clinicSelect.classList.add("error");
+          clinicError.style.display = "block";
+          isValid = false;
+        }
+        return isValid;
+      }
+
+      function validateStep2() {
+        let isValid = true;
+        const nameVal = nameInput.value.trim();
+        const phoneVal = phoneInput.value.trim();
+        const dateVal = dateInput.value;
+
+        if (nameVal.length < 2) {
+          nameInput.classList.add("error");
+          nameError.style.display = "block";
+          isValid = false;
+        }
+        
+        const phoneRegex = /^[6-9]\d{9}$/;
+        if (!phoneRegex.test(phoneVal)) {
+          phoneInput.classList.add("error");
+          phoneError.style.display = "block";
+          isValid = false;
+        }
+        
+        if (!dateVal || dateVal < todayDate) {
+          dateInput.classList.add("error");
+          dateError.style.display = "block";
+          isValid = false;
+        }
+        return isValid;
+      }
+
+      // UI state synchronization
+      function updateStepIndicators() {
+        const labels = [label1, label2, label3];
+        labels.forEach((label, index) => {
+          const stepNum = index + 1;
+          label.classList.remove("active", "unlocked");
+          
+          if (stepNum <= currentStep) {
+            label.classList.add("active");
+          } else if (stepNum <= maxStepReached) {
+            label.classList.add("unlocked");
+          }
+        });
+      }
+
+      function showStep(stepNumber) {
+        step1.style.display = "none";
+        step2.style.display = "none";
+        step3.style.display = "none";
+
+        if (stepNumber === 1) {
+          step1.style.display = "block";
+          progressLine.style.width = "33.3%";
+        } else if (stepNumber === 2) {
+          step2.style.display = "block";
+          progressLine.style.width = "66.6%";
+        } else if (stepNumber === 3) {
+          // Bind data to confirmation screen
+          document.getElementById("confirm_specialty").textContent = specialtySelect.value;
+          document.getElementById("confirm_clinic").textContent = clinicSelect.value;
+          document.getElementById("confirm_name").textContent = nameInput.value.trim();
+          document.getElementById("confirm_phone").textContent = "+91 ******" + phoneInput.value.trim().substring(6);
+          document.getElementById("confirm_date").textContent = dateInput.value;
+
+          step3.style.display = "block";
+          progressLine.style.width = "100%";
+        }
+        currentStep = stepNumber;
+        updateStepIndicators();
+      }
+
+      function navigateToStep(targetStep) {
+        if (targetStep === currentStep) return;
+        
+        // If booking is already confirmed, ignore navigation clicks
+        if (document.getElementById("thanks_state_container").style.display === "block") return;
+
+        // If navigating forward, perform necessary validation
+        if (targetStep > currentStep) {
+          if (currentStep === 1) {
+            if (!validateStep1()) return;
+
+            // Fire Step 1 dataLayer Event
+            const data = {
+              event: 'booking_step_complete',
+              step_number: 1,
+              step_name: 'location_specialty_selected',
+              clinic_location: clinicSelect.value,
+              specialty: specialtySelect.value
+            };
+            window.dataLayer.push(data);
+            logEvent('Booking Step 1 Complete', data);
+
+            maxStepReached = Math.max(maxStepReached, 2);
+
+            if (targetStep === 3) {
+              if (!validateStep2()) {
+                showStep(2);
+                return;
+              }
+              // Fire Step 2 dataLayer Event
+              const data2 = {
+                event: 'booking_step_complete',
+                step_number: 2,
+                step_name: 'contact_info_entered',
+                preferred_date: dateInput.value
+              };
+              window.dataLayer.push(data2);
+              logEvent('Booking Step 2 Complete', data2);
+
+              maxStepReached = Math.max(maxStepReached, 3);
+            }
+          } else if (currentStep === 2) {
+            if (!validateStep2()) return;
+
+            // Fire Step 2 dataLayer Event
+            const data = {
+              event: 'booking_step_complete',
+              step_number: 2,
+              step_name: 'contact_info_entered',
+              preferred_date: dateInput.value
+            };
+            window.dataLayer.push(data);
+            logEvent('Booking Step 2 Complete', data);
+
+            maxStepReached = Math.max(maxStepReached, 3);
+          }
+        }
+
+        showStep(targetStep);
+      }
+
+      // Initialize indicators
+      updateStepIndicators();
+
+      // Step Tracker Click Events
+      label1.addEventListener("click", () => {
+        if (1 <= maxStepReached) navigateToStep(1);
+      });
+      label2.addEventListener("click", () => {
+        if (2 <= maxStepReached) navigateToStep(2);
+      });
+      label3.addEventListener("click", () => {
+        if (3 <= maxStepReached) navigateToStep(3);
+      });
+
+      // Next Button Step 1 -> Step 2
+      document.getElementById("btn_step_1_next").addEventListener("click", () => {
+        navigateToStep(2);
+      });
+
+      // Next Button Step 2 -> Step 3
+      document.getElementById("btn_step_2_next").addEventListener("click", () => {
+        navigateToStep(3);
+      });
+
+      // Back Button Step 2 -> Step 1
+      document.getElementById("btn_step_2_back").addEventListener("click", () => {
+        navigateToStep(1);
+      });
+
+      // Back Button Step 3 -> Step 2
+      document.getElementById("btn_step_3_back").addEventListener("click", () => {
+        navigateToStep(2);
+      });
+
+      // Final Form Submit from Step 3
+      document.getElementById("booking_flow_form").addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const randomBookingId = "BK-" + Math.floor(100000 + Math.random() * 900000);
+        const nameVal = nameInput.value.trim();
+        const phoneVal = phoneInput.value.trim();
+        const clinicVal = clinicSelect.value;
+        const specialtyVal = specialtySelect.value;
+        const dateVal = dateInput.value;
+
+        // 1. Fire Step 3 Booking Confirmed Event
+        const step3Data = {
+          event: 'booking_step_complete',
+          step_number: 3,
+          step_name: 'booking_confirmed',
+          booking_id: randomBookingId,
+          clinic_location: clinicVal,
+          specialty: specialtyVal
+        };
+        window.dataLayer.push(step3Data);
+        logEvent('Booking Step 3 Complete (Confirmed)', step3Data);
+
+        // 2. Fire Campaign Consultation Submitted Event
+        const formSubmitData = {
+          event: 'consultation_form_submitted',
+          clinic_preference: clinicVal,
+          specialty: specialtyVal,
+          campaign_lead_source: 'Google Ads - Consultation Landing Page',
+          device_type: window.innerWidth < 768 ? 'Mobile' : 'Desktop'
+        };
+        window.dataLayer.push(formSubmitData);
+        logEvent('Consultation Lead Submitted', formSubmitData);
+
+        // Bind values to thank you state
+        document.getElementById("summary_booking_id").textContent = randomBookingId;
+        document.getElementById("summary_name").textContent = nameVal;
+        document.getElementById("summary_location").textContent = clinicVal;
+        document.getElementById("summary_specialty").textContent = specialtyVal;
+        document.getElementById("summary_date").textContent = dateVal;
+
+        // Switch UI from form to thank you box
+        document.getElementById("booking_flow_form").style.display = "none";
+        document.querySelector(".steps-tracker").style.display = "none";
+        document.querySelector(".steps-progress").style.display = "none";
+        document.getElementById("thanks_state_container").style.display = "block";
+      });
+
+
+      /* =============================================================
+         2. 'CALL NOW' CLICK TRACKING
+         ============================================================= */
+      document.querySelectorAll(".track-phone").forEach(btn => {
+        btn.addEventListener("click", function() {
+          const data = {
+            event: 'call_initiated',
+            click_url: this.getAttribute("href"),
+            link_text: this.innerText.trim(),
+            page_path: window.location.pathname
+          };
+          window.dataLayer.push(data);
+          logEvent('Call Button Clicked', data);
+        });
+      });
+
+
+      /* =============================================================
+         3. FLOATING WHATSAPP CHAT CLICK TRACKING
+         ============================================================= */
+      document.getElementById("whatsapp_float_link").addEventListener("click", function() {
+        const data = {
+          event: 'whatsapp_chat_initiated',
+          click_url: this.getAttribute("href"),
+          widget_position: 'floating_bottom_right',
+          page_path: window.location.pathname
+        };
+        window.dataLayer.push(data);
+        logEvent('WhatsApp Widget Clicked', data);
+      });
+
+
+      /* =============================================================
+         4. CLINIC LOCATION DETAIL VIEWS
+         ============================================================= */
+      const clinicDrawer = document.getElementById("clinic_drawer_overlay");
+      const clinicDrawerBody = document.getElementById("clinic_drawer_content");
+
+      document.querySelectorAll(".btn-clinic-detail").forEach(btn => {
+        btn.addEventListener("click", function() {
+          const clinicName = this.getAttribute("data-clinic");
+          const city = this.getAttribute("data-city");
+          const slug = this.getAttribute("data-slug");
+
+          // Fire GTM clinic viewed event
+          const data = {
+            event: 'clinic_page_viewed',
+            clinic_name: clinicName,
+            city: city,
+            page_path: window.location.pathname + '/' + slug
+          };
+          window.dataLayer.push(data);
+          logEvent('Clinic Page View', data);
+
+          // Populate details and show drawer popup
+          clinicDrawerBody.innerHTML = `
+            <h4 style="margin: 0 0 5px 0; color: #004d40; font-size: 18px;">${clinicName}</h4>
+            <p style="font-size: 11px; font-weight: bold; color: #00897b; text-transform: uppercase; margin-bottom: 10px;">${city} Region</p>
+            <p style="font-size: 13px; margin-bottom: 15px;">Facilities: Full diagnostic imaging room, Orthopaedic consultants chambers, post-operative physiotherapy, and easy patient parking access.</p>
+            <button onclick="document.getElementById('clinic_drawer_overlay').style.display='none'" style="padding: 6px 12px; background-color:#004d40; color: #fff; border:none; border-radius: 4px; cursor: pointer;">Close Clinic Info</button>
+          `;
+          clinicDrawer.style.display = "block";
+        });
+      });
+
+      document.getElementById("btn_close_drawer").addEventListener("click", () => {
+        clinicDrawer.style.display = "none";
+      });
+
+
+      /* =============================================================
+         5. GATED PATIENT GUIDE MODAL FORM
+         ============================================================= */
+      const guideModal = document.getElementById("guide_modal_popup");
+      const modalClose = document.getElementById("btn_close_modal");
+      const gatedForm = document.getElementById("guide_modal_form");
+
+      const guideName = document.getElementById("guide_name_input");
+      const guidePhone = document.getElementById("guide_phone_input");
+
+      const guideNameError = document.getElementById("guide_name_error");
+      const guidePhoneError = document.getElementById("guide_phone_error");
+
+      // Show modal
+      document.getElementById("btn_trigger_download").addEventListener("click", () => {
+        guideModal.style.display = "flex";
+      });
+
+      // Hide modal
+      modalClose.addEventListener("click", () => {
+        guideModal.style.display = "none";
+      });
+
+      // Hide modal if clicked on overlay
+      window.addEventListener("click", (e) => {
+        if (e.target === guideModal) {
+          guideModal.style.display = "none";
+        }
+      });
+
+      // Clear inputs errors
+      guideName.addEventListener("input", () => {
+        if (guideName.value.trim()) {
+          guideName.classList.remove("error");
+          guideNameError.style.display = "none";
+        }
+      });
+      guidePhone.addEventListener("input", () => {
+        const phoneRegex = /^[6-9]\d{9}$/;
+        if (phoneRegex.test(guidePhone.value.trim())) {
+          guidePhone.classList.remove("error");
+          guidePhoneError.style.display = "none";
+        }
+      });
+
+      gatedForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const nameVal = guideName.value.trim();
+        const phoneVal = guidePhone.value.trim();
+        let isFormValid = true;
+
+        if (!nameVal) {
+          guideName.classList.add("error");
+          guideNameError.style.display = "block";
+          isFormValid = false;
+        }
+        const phoneRegex = /^[6-9]\d{9}$/;
+        if (!phoneRegex.test(phoneVal)) {
+          guidePhone.classList.add("error");
+          guidePhoneError.style.display = "block";
+          isFormValid = false;
+        }
+
+        if (isFormValid) {
+          // 1. Fire Form Submitted Event
+          const dataSubmit = {
+            event: 'patient_guide_form_submitted',
+            form_id: 'gated_patient_guide_form',
+            guide_name: 'Knee & Back Recovery Guide',
+            page_path: window.location.pathname
+          };
+          window.dataLayer.push(dataSubmit);
+          logEvent('Gated Guide Form Submitted', dataSubmit);
+
+          // 2. Fire Guide Download Triggered Event
+          const dataDownload = {
+            event: 'patient_guide_downloaded',
+            file_name: 'orthonow_patient_guide_v1.pdf',
+            file_extension: 'pdf',
+            page_path: window.location.pathname
+          };
+          window.dataLayer.push(dataDownload);
+          logEvent('Patient Guide Downloaded', dataDownload);
+
+          // Reset fields and close modal
+          guideName.value = "";
+          guidePhone.value = "";
+          guideModal.style.display = "none";
+          
+          alert("Success! Gated Patient Guide PDF download started.");
+        }
+      });
+
+
+      /* =============================================================
+         6. SCROLL DEPTH TRACKING
+         ============================================================= */
+      // Track scroll depth points (25%, 50%, 75%, 90%)
+      const scrollFlags = {
+        '25': false,
+        '50': false,
+        '75': false,
+        '90': false
+      };
+
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        
+        if (docHeight <= 0) return; // avoid division by zero
+        
+        const percentage = Math.round((scrollTop / docHeight) * 100);
+
+        const checkPoints = [25, 50, 75, 90];
+        
+        checkPoints.forEach(p => {
+          if (percentage >= p && !scrollFlags[p]) {
+            scrollFlags[p] = true;
+            
+            // Push scroll depth event to dataLayer
+            const data = {
+              event: 'blog_article_scroll',
+              article_title: 'Non-Surgical Management of Knee Osteoarthritis',
+              scroll_depth_percent: p,
+              page_path: window.location.pathname
+            };
+            window.dataLayer.push(data);
+            logEvent(`Scroll Depth ${p}% Complete`, data);
+          }
+        });
+      });
+
+    });
+  </script>
+</body>
+</html>
